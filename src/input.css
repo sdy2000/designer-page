@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .custom-btn {
+        @apply flex text-lg font-medium justify-center items-center cursor-pointer
+         text-white hover:text-color-w-h px-5 py-2 rounded-3xl gap-3
+         transition-all duration-500
+         res_menu:text-sm res_menu:px-3 res_menu:py-2
+    }
+    .custom-btn2 {
+        @apply flex text-lg font-medium justify-center items-center cursor-pointer
+         text-white hover:text-color-w-h px-16 py-4 rounded-3xl gap-3
+         transition-all duration-500
+         res_menu:text-sm res_menu:px-3 res_menu:py-2
+         shadow-sm shadow-black
+    }
+    .custom-btn3 {
+        @apply flex text-lg font-medium justify-center items-center cursor-pointer
+         text-color-g hover:text-color-g-h hover:border-color-g-h px-6 py-2
+         border-2 border-color-g
+         transition-all duration-500
+         res_menu:text-sm res_menu:px-3 res_menu:py-2
+    }
+
+    .ability_card {
+        @apply  w-[31%] h-60 flex justify-center items-end rounded-xl overflow-hidden res_menu:w-[47%] res_menu:h-28
+    }
+
+    .inner {
+        @apply w-[97%] h-[98%] bg-black rounded-2xl overflow-hidden flex flex-col justify-center items-center gap-5 res_menu:gap-1
+    }
+
+    .title{
+        @apply text-white text-6xl font-medium res_menu:text-3xl res_menu:font-bold
+    }
+
+    .text-c{
+        @apply text-lg font-medium text-white res_menu:text-sm
+    }
+
+    .ability_card .inner h1{
+        @apply text-white text-4xl res_menu:text-2xl font-medium res_menu:font-bold
+    }
+
+    .service_card{
+        @apply h-96  flex flex-col justify-center items-center text-center gap-4 w-[34%]
+         res_menu:w-3/4 res_menu:h-auto res_menu:py-6 res_menu:px-3
+         border-2 border-gray-500 bg-color-db rounded-xl 
+         shadow-sm shadow-black
+    }
+
+   .service_card .card_icon{
+    @apply  text-6xl rounded-full flex justify-center items-center p-5
+      text-color-y bg-gray-600 hover:text-white hover:bg-color-g
+      transition-all duration-500
+   }
+
+   .card_exper{
+    @apply  h-24 w-full rounded-lg flex justify-between items-center px-12 border-y-2 border-r-2 border-gray-500
+    res_menu:h-40  res_menu:flex-wrap res_menu:justify-between res_menu:px-3
+   }
+
+   .card_exper .card_icon{
+    @apply  flex justify-center items-center text-4xl rounded-full bg-white text-color-b p-4
+    res_menu:p-2  res_menu:w-auto
+   }
+
+   .card_pric{
+    @apply w-[33%] h-[550px] flex flex-col justify-center items-center gap-5 relative res_menu:w-full
+   }
+
+   .info{
+    @apply  px-8 flex flex-col justify-center items-center flex-wrap bg-color-dd border
+   }
+
+   .form_group{
+    @apply flex flex-col pb-2 gap-3
+   } 
+
+   .info_icon{
+    @apply bg-gray-700 text-color-y text-5xl p-4 rounded-full flex justify-center items-center
+   }
+}
+
+@layer base {
+    .container {
+        @apply mx-auto com:max-w-[85%]
+    }
+}

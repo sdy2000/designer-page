@@ -1,0 +1,138 @@
+body {
+    font-family: 'Nunito', sans-serif;
+}
+
+.header {
+    background: rgb(13, 13, 11);
+    background: linear-gradient(180deg,
+            rgba(13, 13, 11, 1) 53%,
+            rgba(5, 65, 93, 1) 100%);
+}
+
+.banner {
+    background: rgb(93, 5, 5);
+    background: linear-gradient(45deg, rgba(93, 5, 5, 1) 0%, rgba(0, 0, 0, 1) 56%);
+}
+
+.ability_main {
+    background: rgb(110, 96, 3);
+    background: linear-gradient(45deg, rgba(110, 96, 3, 1) 0%, rgba(0, 0, 0, 1) 56%);
+}
+
+@mixin gradient($colorA) {
+    background: $colorA;
+    background: linear-gradient(180deg,
+            $colorA 26%,
+            rgb(0, 0, 0) 61%);
+
+    .inner {
+        color: $colorA;
+        background: rgb(33, 33, 5);
+        background: linear-gradient(180deg,
+                rgb(18, 18, 4) 17%,
+                rgb(0, 0, 0) 63%);
+    }
+}
+
+.card_pric,
+.inner_card,
+.main_card {
+    background: rgb(33, 33, 5);
+    background: linear-gradient(180deg,
+            rgb(29, 29, 5) 17%,
+            rgb(11, 11, 8) 63%);
+}
+
+.cards_service .service_card {
+    background: rgb(5, 35, 48);
+    background: linear-gradient(180deg,
+            rgba(5, 35, 48, 1) 17%,
+            rgba(8, 11, 8, 1) 63%);
+}
+
+.red_gradient {
+    @include gradient(red);
+}
+
+.green_gradient {
+    @include gradient(green);
+}
+
+.yellow_gradient {
+    @include gradient(yellow);
+}
+
+.aqua_gradient {
+    @include gradient(aqua);
+}
+
+.purple_gradient {
+    @include gradient(purple);
+}
+
+.chocolate_gradient {
+    @include gradient(chocolate);
+}
+
+.services {
+    background: rgb(5, 65, 93);
+    background: linear-gradient(45deg, rgba(5, 65, 93, 1) 0%, rgba(0, 0, 0, 1) 56%);
+}
+
+.experience {
+    background: rgb(56, 28, 26);
+    background: radial-gradient(circle, rgba(56, 28, 26, 1) 10%, rgba(0, 0, 0, 1) 79%);
+}
+
+.card_exper {
+    background: rgb(56, 28, 26);
+    background: linear-gradient(18deg, rgba(56, 28, 26, 0.7) 0%, rgba(7, 7, 7, 0.7) 36%);
+}
+
+.pricing {
+    background: rgb(56, 52, 26);
+    background: radial-gradient(circle, rgba(56, 52, 26, 1) 10%, rgba(0, 0, 0, 1) 79%);
+}
+
+.talk {
+    background: rgb(47, 33, 33);
+    background: linear-gradient(45deg, rgba(47, 33, 33, 1) 8%, rgba(0, 0, 0, 1) 61%);
+}
+
+.info_input {
+    border: none;
+    background: none;
+    padding-bottom: 8px;
+    border-bottom: 1px solid gray;
+
+    &:focus-visible {
+        outline: none;
+        border-bottom-color: gold;
+    }
+
+    &::placeholder {
+        color: white;
+        padding-bottom: 10px;
+    }
+}
+
+.icons ion-icon{
+    &:hover{
+        color: gold;
+        transition: scale(1.2);
+        cursor: pointer;
+    }
+}
+
+.footer {
+    background: rgb(33, 47, 33);
+    background: radial-gradient(circle, rgba(33, 47, 33, 1) 15%, rgba(0, 0, 0, 1) 77%);
+}
+
+.email_input input {
+    border: none;
+
+    &:focus-visible {
+        outline: none;
+    }
+}
